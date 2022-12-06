@@ -175,7 +175,7 @@ def bs_blurb_text(cat, backstory=None):
         bs_blurb = "This cat was once a medicine cat in another clan."
     if backstory == 'medicine_cat2':
         bs_blurb = "This cat had been a medicine cat of another clan under a tyrannical leadership. They " \
-                   "soon had enough fed the leader deathberries before leaving the clan and joining this one."
+                   "soon had enough, feeding the leader deathberries before also leaving the clan and joining this one."
     if backstory == 'otherclan':
         bs_blurb = "This cat was born into another clan, but came to this clan by choice."
     if backstory == 'otherclan2':
@@ -243,7 +243,9 @@ def backstory_text(cat):
         bs_display = 'formerly abandoned'
     elif bs_display == 'abandoned4':
         bs_display = 'deceased parent'
-    elif bs_display == ['medicine_cat1', 'medicine_cat2']:
+    elif bs_display == 'medicine_cat1':
+        bs_display = 'formerly a medicine cat'
+    elif bs_display == 'medicine_cat2':
         bs_display = 'formerly a medicine cat'
     elif bs_display in ['otherclan', 'otherclan2']:
         bs_display = 'formerly from another clan'
